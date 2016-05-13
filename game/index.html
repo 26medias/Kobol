@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>Kobol</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="js/phaser.min.js"></script>
+		<script type="text/javascript" src="js/kobol.js"></script>
+	</head>
+	<body>
+		<div id="game"></div>
+		<script type="text/javascript">
+			var game = new kobol('game', {
+				width:	500,
+				height:	500
+			});
+			game.init();
+			
+			console.log("game",game);
+		</script>
+	</body>
+</html>
