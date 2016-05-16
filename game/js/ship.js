@@ -9,7 +9,7 @@
 				y:	50
 			},
 			velocity:			200,
-			drag:				100,
+			drag:				200,
 			angularVelocity:	300,
 			sensor:	{
 				degree:		45,
