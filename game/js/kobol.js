@@ -4,7 +4,9 @@
 		this.options	= _.extend({
 			fullwidth:	false,
 			width:		800,
-			height:		600
+			height:		600,
+			wWidth:		800*4,
+			wHeight:	600*2
 		}, options);
 	};
 	kobol.prototype.init	= function() {
@@ -49,21 +51,25 @@
 		this.game.physics.startSystem(Phaser.Physics.ARCADE);
 		this.keyboard	= this.game.input.keyboard.createCursorKeys();
 		
-		this.game.add.tileSprite(0, 0, this.game.width, this.game.height, 'space');
+		this.game.add.tileSprite(0, 0, this.options.wWidth, this.options.wHeight, 'space');
+		
+		this.game.world.setBounds(0, 0, this.options.wWidth, this.options.wHeight);
 		
 		this.build();
 		
 		// Manual ship
 		this.ship	= new ship(this, {
-			control:	'manual',
+			control:	'autopilot',
 			position:	{
-				x:	100,
-				y:	100
+				x:	this.game.width/2,
+				y:	this.game.height/2
 			}
 		});
 		this.ship.init();
 		
+		this.game.camera.follow(this.ship.player, Phaser.Camera.FOLLOW_TOPDOWN);
 		
+		/*
 		// Autopilot ship
 		this.cylon	= new ship(this, {
 			sprite:		'ship-eagle',
@@ -87,40 +93,39 @@
 			angularVelocity:	500
 		});
 		this.alien.init();
-		
+		*/
 		
 		
 	};
 	kobol.prototype.build	= function() {
 		var scope = this;
 		
-		this.env					= this.game.add.group();
-		this.env.enableBody			= true;
-		this.env.physicsBodyType	= Phaser.Physics.ARCADE;
+		this.env				= this.game.add.physicsGroup();
 		
-		_.each(_.range(0,10,1), function(i) {
+		_.each(_.range(0,30,1), function(i) {
 			var asteroid			= scope.env.create(_.random(50,scope.game.world.width-50), _.random(50,scope.game.world.height-50), 'asteroid');
-			asteroid.name			= 'asteroid-'+i;
-			asteroid.body.immovable	= true;
+			//asteroid.body.immovable	= true;
+			//asteroid.name			= 'asteroid-'+i;
+			//asteroid.body.mass		= -100;
 		});
 		
 		
 	};
 	kobol.prototype.update	= function() {
 		this.ship.update();
-		this.cylon.update();
-		this.alien.update();
+		//this.cylon.update();
+		//this.alien.update();
 	};
 	kobol.prototype.screenWrap	= function(actor) {
 		if (actor.x < 0) {
-			actor.x = this.game.width;
-		} else if (actor.x > this.game.width) {
+			actor.x = this.options.wWidth;
+		} else if (actor.x > this.options.wWidth) {
 			actor.x = 0;
 		}
 
 		if (actor.y < 0) {
-			actor.y = this.game.height;
-		} else if (actor.y > this.game.height) {
+			actor.y = this.options.wHeight;
+		} else if (actor.y > this.options.wHeight) {
 			actor.y = 0;
 		}
 		return true;

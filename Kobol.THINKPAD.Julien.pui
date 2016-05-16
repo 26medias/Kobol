@@ -2,27 +2,23 @@
 Active File Display Mode=1
 Active File Index=2
 Open File Line0=0
-Open File Line1=381
-Open File Line2=968
-Open File Line3=3098
-Open File Pos0=1431
-Open File Pos1=1578
-Open File Pos2=3157
-Open File Pos3=3778
+Open File Line1=763
+Open File Line2=4449
+Open File Pos0=2304
+Open File Pos1=1710
+Open File Pos2=5143
 Open File Window Pos0=0,1,-1,-1,-1,-1,5,31,1580,974
 Open File Window Pos1=0,1,-1,-1,-1,-1,5,31,1580,974
 Open File Window Pos2=0,1,-1,-1,-1,-1,5,31,1580,974
-Open File Window Pos3=0,1,-1,-1,-1,-1,5,31,1580,974
 Open File0=C:\www\htdocs\git\Kobol\game\index.html
 Open File1=C:\www\htdocs\git\Kobol\game\js\kobol.js
 Open File2=C:\www\htdocs\git\Kobol\game\js\ship.js
-Open File3=C:\www\htdocs\git\hedgejs\hedge.neural.js
-Open File4=
+Open File3=
 Remember Files=1
 
 [Project Information]
 	Project Start=E007050005000D00150016001D00000046
-	Working Time=10700
+	Working Time=109137
 
 [Folders]
 	.\=1
