@@ -1,19 +1,27 @@
 [Open Files]
 Active File Display Mode=1
-Active File Index=2
+Active File Index=1
 Open File Line0=0
-Open File Line1=763
-Open File Line2=4449
-Open File Pos0=2304
-Open File Pos1=1710
-Open File Pos2=5143
-Open File Window Pos0=0,1,-1,-1,-1,-1,5,31,1580,974
-Open File Window Pos1=0,1,-1,-1,-1,-1,5,31,1580,974
-Open File Window Pos2=0,1,-1,-1,-1,-1,5,31,1580,974
+Open File Line1=72083
+Open File Line2=385
+Open File Line3=5437
+Open File Line4=2
+Open File Pos0=2323
+Open File Pos1=73299
+Open File Pos2=935
+Open File Pos3=6145
+Open File Pos4=2
+Open File Window Pos0=0,1,-1,-1,-1,-1,5,27,1576,975
+Open File Window Pos1=0,1,-1,-1,-1,-1,5,27,1576,975
+Open File Window Pos2=0,1,-1,-1,-1,-1,5,27,1576,975
+Open File Window Pos3=0,1,-1,-1,-1,-1,5,27,1576,975
+Open File Window Pos4=0,1,-1,-1,-1,-1,5,27,1576,975
 Open File0=C:\www\htdocs\git\Kobol\game\index.html
-Open File1=C:\www\htdocs\git\Kobol\game\js\kobol.js
-Open File2=C:\www\htdocs\git\Kobol\game\js\ship.js
-Open File3=
+Open File1=C:\www\htdocs\git\Kobol\game\js\ship.js
+Open File2=C:\www\htdocs\git\Kobol\game\js\kobol.js
+Open File3=C:\www\htdocs\git\hedgejs\hedge.neural.js
+Open File4=C:\www\htdocs\git\Kobol\game\nets\10h.net
+Open File5=
 Remember Files=1
 
 [Project Information]
